@@ -28,7 +28,7 @@ const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"]
 get item from array
 console.log(daysOfWeek);
 
-add one more day to the array
+plus one more day to the array
 daysOfWeek.push("sun");
 console.log(daysOfWeek); */
 
@@ -43,11 +43,73 @@ console.log(player.name); */
 
 //function : 반복해서 사용할 수 있는 코드 조각
 // 어떤 코드를 캡슐화해서 실행을 여러번 할 수 있게 해준다.  
-function sayHello() {       
-    console.log("Hello my name is c");
-}
+// function sayHello() {       
+//     console.log("Hello my name is c");
+// }
 
-sayHello();
-sayHello();
-sayHello();
-sayHello();
+// sayHello();
+// sayHello();
+// sayHello();
+// sayHello(); 
+
+// const calculator = {
+//     plus: function (a, b) {
+//         return a + b;
+//     },
+//     min: function (a, b) {
+//         return a - b;
+//     },
+//     div: function (a, b) {
+//         return a / b;
+
+//     },
+//     multi: function (a, b) {
+//         return a * b;
+
+//     },
+//     power: function (a, b) {
+//         return a ** b;
+
+//     }
+// };
+
+// const plusResult = calculator.plus(2, 3);
+// const minResult = calculator.min(plusResult,10);
+// const divResult = calculator.div(10, minResult);
+// const multiResult = calculator.multi(divResult, plusResult);
+// const powerResult = calculator.power(divResult, minResult);
+
+// const age = 96;
+// function calculatorKrAge(ageOfForeiner){
+//     return ageOfForeiner + 2;
+// }
+
+// const krAge = calculatorKrAge(age);
+
+// console.log(krAge);
+
+
+// 조건문
+// 음주 가능 여부 계산기
+// prompt 사용자가 볼 수 있게 창을 띄어준다.
+// typeof 값의 타입을 볼 수 있다.
+// 함수는 내부에서 외부로 값이 나온다.
+const age = parseInt(prompt("How old are you?")); //페이지 잠시 일시정지
+
+// console.log();
+
+if(isNaN(age || age < 0)){
+    console.log("Please write a number");
+} else if(age<18) {
+    console.log("You are too young")
+} else if (age >= 18 && age <= 50){
+    console.log("You can drink");
+} else if (age > 50 && age <= 80){
+    console.log("You should exercise");
+} els
+
+// 값 형변환
+//parseInt();15
+
+
+

@@ -1,17 +1,18 @@
-const title = document.querySelector('div.hello:first-child h1');
+const loginForm = document.querySelector('#login-form');
+const loginInput = document.querySelector('#login-form input');
 
-function handleTitleClick() {
-  title.style.color = 'blue';
+const link = document.querySelector('a');
+
+// submit 작동 안하게
+function onLoginSubmit(event) {
+  event.preventDefault();
+  console.log(loginInput.value);
 }
 
-function handleMouseEntera() {
-  title.innerText = 'mouse is here!';
+function handleLinkClick(event) {
+  console.log(event);
+  alert('Clicked!');
 }
 
-function handleMouseLeave() {
-  title.innerText = 'mouse is gone!';
-}
-
-title.onclick = ('click', handleTitleClick);
-title.addEventListener('mouseenter', handleMouseEntera);
-title.addEventListener('mouseleave', handleMouseLeave);
+loginForm.addEventListener('submit', onLoginSubmit);
+link.addEventListener('click', handleLinkClick);
